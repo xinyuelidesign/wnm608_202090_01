@@ -1,0 +1,9 @@
+:root {
+   --color-neutral-light:#f0ecec;
+   --color-neutral-medium:#9e8d8d;
+   --color-neutral-dark:#392f2f;
+}
+
+body {
+   font-family:Calibri, sans-serif;
+}
