@@ -136,6 +136,7 @@ code {
    .nav.crumbs li:not(:first-child)::before {
       content:'WOW’';
       font-family:futura;
+       text-align: center;
    }
 
 
@@ -144,6 +145,7 @@ code {
    background-color:var(--color-neutral-dark);
    color:var(--color-neutral-light);
    line-height:var(--header-height);
+     text-align: center;
 }
 .navbar h1 {
    font-size:1em;
@@ -231,7 +233,7 @@ code {
 }
 .table td,
 .table th {
-   text-align:left;
+   text-align:center;
    padding:0.2em 0.5em;
 }
 
