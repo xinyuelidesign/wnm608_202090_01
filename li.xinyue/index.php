@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+ <title>Store</title>
+    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Cool Website</title>
 
    <link rel="stylesheet" href="lib/css/styleguide.css">
    <link rel="stylesheet" href="css/storetheme.css">
-</head>
+
+  
+
+   <?php include "Parts/meta.php" ?>
+
 <body>
    
-   <!-- header>h1+p -->
+   <?php include "Parts/navbar.php" ?>
+
+
+
+   <div class="view-window" style="background-image:url(img/leave.png)">
+      <h2>Product Name</h2>
+   </div>
+   <div class="container">
+      <div class="card soft">
+         <h2>Welcome to the Store</h2>
+      </div>
+   </div>
+ <!-- header>h1+p -->
    <header class="navbar">
       <div class="container display-flex flex-align-center">
          <div class="flex-none"><h1>Cool Website</h1></div>
@@ -26,4 +43,6 @@
             </ul>
          </nav>
       </div>
-   </header>
+</body>
+</head>
+</html>
