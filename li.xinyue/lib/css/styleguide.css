@@ -28,7 +28,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -71,7 +70,6 @@ code {
    max-width:1000px;
    margin-right: auto;
    margin-left: auto;
-   color:#F08F98;
 }
 .hidden { display:none; }
 
@@ -118,7 +116,7 @@ code {
    }
 
    .nav.stretch li {
-      flex: 1 1 auto;
+      flex: 1 2 auto;
       text-align:center;
    }
 
@@ -170,7 +168,7 @@ code {
    background-position:center;
    background-attachment:fixed;
 
-   height:80vh;
+   height:90vh;
 }
 
 
@@ -182,7 +180,6 @@ code {
    padding:1em;
    margin-top:3em;
    margin-bottom:1em;
-
    position:relative;
    overflow:hidden;
 }
@@ -190,6 +187,7 @@ code {
    .card.soft {
       border-radius:0.5em;
       box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      color:#5DB7ED;
    }
    .card.hard {
       border-radius:1em;
