@@ -1,3 +1,5 @@
+<base href="/AAU/wnm608/li.xinyue/">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

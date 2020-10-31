@@ -3,7 +3,7 @@
 <head>
  <title>UT</title>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=3.0">
    <title>UT</title>
 
    <link rel="stylesheet" href="lib/css/styleguide.css">
@@ -18,12 +18,14 @@
    
    <?php include "Parts/navbar.php" ?>
 
-   <div class="view-window" style="background-image:url(img/RD2.png)">
-   </div>
-   <div class="container">
+      <div class="container">
       <div class="card soft">
          <h2>Welcome to UT</h2>
       </div>
+
+   <div class="view-window" style="background-image:url(img/leave.png)">
+   </div>
+
    </div>
  <!-- header>h1+p -->
    <header class="navbar">
@@ -34,10 +36,8 @@
          <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
          <nav class="nav flex-none">
             <ul class="display-flex">
-               <li><a href="#article1">Link 1</a></li>
-               <li><a href="#article2">Link 2</a></li>
-               <li><a href="#article3">Link 3</a></li>
-               <li><a href="#article4">Link 4</a></li>
+               <li><a href="#article1">Contact</a></li>
+               <li><a href="#article2">Location</a></li>
             </ul>
          </nav>
       </div>

@@ -24,6 +24,7 @@ body {
    font-size:100%;
    font-family: Futura, sans-serif;
    text-align: center;
+   background-color:white;
 
 }
 
@@ -70,6 +71,7 @@ code {
    max-width:1000px;
    margin-right: auto;
    margin-left: auto;
+   color: #FF9F9B;
 }
 .hidden { display:none; }
 
@@ -116,7 +118,7 @@ code {
    }
 
    .nav.stretch li {
-      flex: 1 2 auto;
+      flex: 1 1 auto;
       text-align:center;
    }
 
@@ -147,6 +149,7 @@ code {
    color:var(--color-neutral-light);
    line-height:var(--header-height);
      text-align: center;
+     border-radius: 20em;
 }
 .navbar h1 {
    font-size:1em;
@@ -167,6 +170,7 @@ code {
    background-size:cover;
    background-position:center;
    background-attachment:fixed;
+
 
    height:90vh;
 }
