@@ -93,9 +93,17 @@ HTML;
          ?>
          </ul>
 
-         <?php } ?>
+         <?php }  ?>
       </div>
    </div>
-   
+   <div>
+<form action="welcome_get.php" method="get">
+Firstname: <input type="text" name="first"><br>
+Lastname: <input type="text" name="last"><br>
+<input type="submit">
+</form>
+
+   </div>
+
 </body>
 </html>
