@@ -8,4 +8,4 @@
 
 ## Other Links
 
-- http://xinyuelidesign.com/AAU/wnm608/li.xinyue/landingpage/
+- http://xinyuelidesign.com/AAU/wnm608/li.xinyue/index.php/
