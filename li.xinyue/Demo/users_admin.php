@@ -62,14 +62,17 @@ HTML;
          <nav class="nav flex-none">
             <ul>
                <li><a href="<?= $_SERVER['PHP_SELF'] ?>">List</a></li>
+
             </ul>
+
          </nav>
       </div>
    </header>
 
    <div class="container">
-      <div class="card soft">
 
+      <div class="card soft">
+       <button class="add_users"><a href="./Demo/add.php">add</a></button>
          <?php
 
 
@@ -79,13 +82,13 @@ HTML;
             // TODO(lpp): remove submit form.
             // add delete button to add &delete url param.
 
-            echo "<li>
-            <a href='{$_SERVER['PHP_SELF']}?id={$_GET['id']}&delete=1'>delete</a>
-            </li>";
+            echo "
+            <a href='{$_SERVER['PHP_SELF']}?id={$_GET['id']}&delete=1'> Delete </a>
+            ";
 
             if(isset($_GET['delete'])) {
                // TODO: read json and delet by the given name.
-               echo "TODO: read json and delete by the given name.";
+               echo "Successfully deleted";
 
 
                $file_name = 'users.json'; 
@@ -97,7 +100,12 @@ HTML;
                $data = delete_from_array_by_index($data, $_GET['id']);
                // print_r($data);
                file_put_contents($file_name, json_encode($data, JSON_PRETTY_PRINT));
+
+
+
             }
+
+
 
 
          } else {
@@ -117,19 +125,11 @@ HTML;
 
          ?>
          </ul
-         <?php }  ?>>
-
+         <?php }  ?>
+        
 
       </div>
- <div>
-<form action="./Demo/welcome_get.php" method="get">
-Name: <input type="text" name="name"><br>
-Type: <input type="text" name="type"><br>
-Email: <input type="text" name="email"><br>
-Classes: <input type="text" name="classes"><br>
-<input type="submit">
-</form>
-</div>
+
    
 
 
