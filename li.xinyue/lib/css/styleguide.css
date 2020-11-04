@@ -20,7 +20,6 @@
 
 
 body {
-   margin:10;
    font-size:100%;
    font-family: Futura, sans-serif;
    text-align: center;
@@ -428,4 +427,7 @@ code {
   height: 50px;
   font-family: futura, serif;
   color:#FADC34;
+}
+.Users{
+  text-align: center;
 }

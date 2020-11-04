@@ -109,7 +109,7 @@ HTML;
 
          ?>
 
-         <h2>User List</h2>
+         <h2 class = "Users" >User List</h2>
 
          <ul>
          <?php
