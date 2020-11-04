@@ -37,8 +37,7 @@
 
    <?php 
          
-        function get_data() { 
-            $datae = array(); 
+        function get_data() {  
             $datae[] = array( 
                 'name' => $_GET['name'], 
                 'type' => $_GET['type'],

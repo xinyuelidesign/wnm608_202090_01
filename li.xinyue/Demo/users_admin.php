@@ -72,7 +72,6 @@ HTML;
    <div class="container">
 
       <div class="card soft">
-       <button class="add_users"><a href="./Demo/add.php">add</a></button>
          <?php
 
 
@@ -86,7 +85,9 @@ HTML;
             <a href='{$_SERVER['PHP_SELF']}?id={$_GET['id']}&delete=1'> Delete </a>
             ";
 
+
             if(isset($_GET['delete'])) {
+           
                // TODO: read json and delet by the given name.
                echo "Successfully deleted";
 
@@ -100,12 +101,8 @@ HTML;
                $data = delete_from_array_by_index($data, $_GET['id']);
                // print_r($data);
                file_put_contents($file_name, json_encode($data, JSON_PRETTY_PRINT));
-
-
-
+            
             }
-
-
 
 
          } else {
@@ -122,9 +119,14 @@ HTML;
             <a href='{$_SERVER['PHP_SELF']}?id=$i'>{$users[$i]->name}</a>
             </li>";
          }
+            echo <<<HTML
+             <button class="add_users"><a href="./Demo/add.php">add</a></button>
+             HTML;
 
          ?>
-         </ul
+
+         </ul>
+
          <?php }  ?>
         
 
