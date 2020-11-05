@@ -75,7 +75,7 @@ $userdata = $id=='new' ? '' : <<<HTML
       <h2 class="flex-stretch">$user->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/trash.png" class="icon">
+            <img src="img/icons/trash.svg" class="icon">
          </a>
       </div>
    </div>
@@ -143,7 +143,7 @@ HTML;
 <head>
    <title>User Administrator</title>
 
-   <?php include "../Parts/meta.php"; ?>
+   <?php include "../parts/meta.php"; ?>
 </head>
 <body>
 
@@ -197,6 +197,6 @@ HTML;
          </div>
          <?php } ?>
    </div>
-
+   
 </body>
 </html>
