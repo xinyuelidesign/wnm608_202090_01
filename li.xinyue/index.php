@@ -23,7 +23,7 @@
          <h2>Welcome to UT</h2>
       </div>
 
-   <div class="view-window" style="background-image:url(img/leave.png)">
+   <div class="view-window" style="background-image:url(img/furry.png)">
    </div>
 
    </div>

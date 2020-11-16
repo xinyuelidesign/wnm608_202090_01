@@ -12,33 +12,29 @@ function file_get_json($filename) {
 }
 
 
-function delete_from_array_by_index($array, $index) {
-	unset($array[$index]);
-	return array_values($array);
-}
+function MYSQLIConn() {
+   include_once "auth.php";
 
-function  MYSQLIConn(){
-    Include_once "auth.php";
+   @$conn = new mysqli(...MYSQLIAuth());
 
-    @$conn = new mysqli( ...MYSQLIAuth());
+   if($conn->connect_errno) die($conn->connect_error);
 
-    if($conn->connect_errno) die($conn->connect_error);
+   $conn->set_charset('utf8');
 
-    $conn->set_charset('utf8');
-
-    return $conn;
+   return $conn;
 }
 
 
-function  MYSQLIQuery($sql){
-	$conn =  MYSQLIConn();
+function MYSQLIQuery($sql) {
+   $conn = MYSQLIConn();
 
-	$a = [];
+   $a = [];
 
-	$result = $conn->query($sql);
-	if ($conn->errno) die($conn->error);
+   $result = $conn->query($sql);
+   if($conn->errno) die($conn->error);
 
-	while($row = $result->fetch_object())
-		$a[] = $row;
-	return $a;
+   while($row = $result->fetch_object())
+      $a[] = $row;
+
+   return $a;
 }
