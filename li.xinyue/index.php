@@ -20,10 +20,11 @@
 
       <div class="container">
       <div class="card soft">
-         <h2>Welcome to UT</h2>
+         <a href="http://xinyuelidesign.com/AAU/wnm608/li.xinyue/product_list.php"><h2>Welcome to UT</h2></a>
       </div>
 
    <div class="view-window" style="background-image:url(img/furry.png)">
+
    </div>
 
    </div>

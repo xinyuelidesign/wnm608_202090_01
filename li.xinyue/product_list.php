@@ -9,7 +9,7 @@ return $r.<<<HTML
    <a href="product_item.php?id=$o->id" class="product-item">
       <figure>
          <div class="product-image">
-            <img src="$o->image_thumb" alt="">
+            <img src="/AAU/wnm608/li.xinyue/img/$o->image_thumb" alt="">
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
@@ -34,7 +34,7 @@ HTML;
    
    <?php include "Parts/navbar.php" ?>
 
-   <div class="container">
+    <div class="container">
          <h2>Product List</h2>
 
          <div class="grid gap">
@@ -54,6 +54,7 @@ HTML;
             ?>
          </div>
    </div>
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@ include_once "lib/php/functions.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Product Checkout</title>
+   <title>Thanks</title>
 
    <?php include "Parts/meta.php" ?>
 </head>
@@ -14,12 +14,9 @@ include_once "lib/php/functions.php";
 
    <div class="container">
       <div class="card soft">
-         <h2>Product Checkout</h2>
+         <h2>Thanks for Purchasing</h2>
 
-         <a href="./">Cancel</a>
-
-         <div>Fill in your information</div>
-         <div><a href="product_actions.php?action=reset-cart">Pay</a></div>
+         <a href="product_list.php">Back to shopping</a>
       </div>
    </div>
 

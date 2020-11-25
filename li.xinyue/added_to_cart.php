@@ -1,11 +1,7 @@
-<?php
-
-include_once "lib/php/functions.php";
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>About Us</title>
+   <title>Added Product To Cart</title>
 
    <?php include "Parts/meta.php" ?>
 </head>
@@ -15,9 +11,9 @@ include_once "lib/php/functions.php";
 
    <div class="container">
       <div class="card soft">
-         <h2>About Us</h2>
+         <h2>Added Product To Cart</h2>
 
-         <p>We make a thing.</p>
+         <a href="product_list.php">Back to shopping</a>
       </div>
    </div>
 
