@@ -8,11 +8,11 @@ return $r.<<<HTML
    <a href="product_item.php?id=$o->id" class="product-item">
       <figure>
          <div class="product-image">
-            <img src="/img/$o->image_thumb" alt="">
+            <img src="/AAU/wnm608/li.xinyue/img/$o->image_thumb" alt="">
          </div>
          <figcaption class="product-description">
             <div class="product-price">&dollar;$o->price</div>
-            <div class="product-title">$o->name</div>
+            <div class="product-name">$o->name</div>
          </figcaption>
       </figure>
    </a>
@@ -41,7 +41,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex">
    <div class="flex-none image-thumbs">
-      <img src="/img/$o->image_thumb">
+      <img src="/AAU/wnm608/li.xinyue/img/$o->image_thumb">
    </div>
    <div class="flex-stretch">
       <strong>$o->name</strong>
@@ -93,4 +93,66 @@ return <<<HTML
    <a href="product_checkout.php" class="form-button">Checkout</a>
 </div>
 HTML;
+}
+
+
+
+
+
+
+
+
+function makeAdminList($r,$o) {
+return $r.<<<HTML
+<div class="display-flex card flat soft">
+   <div class="flex-none image-thumbs">
+      <img src="/AAU/wnm608/li.xinyue/img/$o->image_thumb">
+   </div>
+   <div class="flex-stretch" style="padding:1em">
+      <div><strong>$o->name</strong></div>
+      <div>$o->category</div>
+   </div>
+   <div class="flex-none">
+      <div class="card-section"><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
+      <div class="card-section"><a href="product_item.php?id=$o->id" class="form-button">View</a></div>
+   </div>
+</div>
+HTML;
+}
+
+
+
+
+
+function makeRecommend($a) {
+$Products = array_reduce($a,'makeProductList');
+echo <<<HTML
+<div class="grid gap productlist">$Products</div>
+HTML;
+}
+
+
+
+function recommendSimilar($cat,$id=0,$limit=3) {
+   $result = MYSQLIQuery("
+         SELECT *
+         FROM Products
+         WHERE
+            `category`='$cat' AND
+            `id` <> $id
+         ORDER BY rand()
+         LIMIT $limit
+      ");
+   makeRecommend($result);
+}
+function recommendCategory($cat,$limit=3) {
+   $result = MYSQLIQuery("
+         SELECT *
+         FROM Products
+         WHERE
+            `category`='$cat'
+         ORDER BY `date_create` DESC
+         LIMIT $limit
+      ");
+   makeRecommend($result);
 }

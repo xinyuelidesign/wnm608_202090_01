@@ -8,13 +8,13 @@ $product = MYSQLIQuery("SELECT * FROM Products WHERE id = {$_GET['id']}")[0];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/img/$o'>";
+   return $r."<img src='/AAU/wnm608/li.xinyue/img/$o'>";
 });
 
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Store: <?= $product->name ?></title>
+   <title>Store: <?= $product->title ?></title>
 
    <?php include "Parts/meta.php" ?>
 </head>
@@ -28,7 +28,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
          <div class="col-xs-12 col-md-7">
             <div class="card soft">
                <div class="image-main">
-                  <img src="/img/<?= $product->image_thumb ?>" alt="">
+                  <img src="/AAU/wnm608/li.xinyue/img/<?= $product->image_thumb ?>" alt="">
                </div>
                <div class="image-thumbs">
                   <?= $thumbs_elements ?>
@@ -41,6 +41,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                <div class="card-section">
                   <h2><?= $product->name ?></h2>
                   <div>&dollar;<?= $product->price ?></div>
+                  <div><a href="product_list.php?t=Products_by_name&name=<?= $product->name ?>"><?= $product->name ?></a></div>
                </div>
                <div class="card-section">
                   <div class="form-control">
@@ -85,21 +86,11 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       </div>
          <h2>Related Products</h2>
 
-         <div class="grid gap">
-           
-            <?php
+         <?php
 
-            echo array_reduce(
-               MYSQLIQuery("
-                  SELECT *
-                  FROM Products
-                  WHERE id in (4,6,8)
-               "),
-               'makeProductList'
-            );
+         recommendSimilar($product->name,$product->id);
 
-            ?>
-         </div>
+         ?>
    </div>
 
 </body>

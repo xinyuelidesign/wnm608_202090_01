@@ -16,9 +16,12 @@ include_once "lib/php/functions.php";
       <div class="card soft">
          <h2>Product Checkout</h2>
 
-         <a href="./">Cancel</a>
+         <a href="index.php">Cancel</a>
 
-         <div>Fill in your information</div>
+         <div class="card soft">
+        <h4> Fill in your information </h4>
+      </div>
+
          <div><a href="product_actions.php?action=reset-cart">Pay</a></div>
       </div>
    </div>
