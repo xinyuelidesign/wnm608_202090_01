@@ -32,7 +32,7 @@ h5,
 h6 {
    font-family:Futura, serif;
    font-stretch: ultra-condensed;
-   color: #8AC8FA;
+   color: #0C2B78;
 }
 
 h3{ font-stretch: ultra-condensed;
@@ -42,6 +42,7 @@ a {
    text-decoration: none;
    font-weight: bold;
    color:relative;
+   color:#0C2B78;
 }
 a:hover {
    text-decoration: underline;
@@ -167,6 +168,7 @@ code {
    background-size:contain;
    background-position:center;
    background-attachment:fixed;
+   background-repeat: no-repeat;
 
    height:70vh;
 }
@@ -283,7 +285,7 @@ code {
     outline: 0;
 }
 .form-control {
-    margin: 1em 0;
+    margin: 3em 0;
 }
 .form-label {
     font-size: 0.8em;
@@ -467,5 +469,22 @@ ul.nav li:first-child a:before {
   background: #FDACA2;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0C2B78;
+  min-width: 160px;
+  box-shadow: 0px 6px 8px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 

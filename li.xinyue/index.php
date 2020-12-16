@@ -37,8 +37,14 @@
          <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
          <nav class="nav flex-none">
             <ul class="display-flex">
-               <li><a href="#article1">Contact</a></li>
-               <li><a href="#article2">Location</a></li>
+              <div class="dropdown">
+  <a href="mailto: Xinyuelidesign@gmail.com">Contact</a>
+  <div class="dropdown-content">
+  <p>Xinyuelidesign@gmail.com</p>
+  </div>
+  </div>
+
+               <li><a href="https://www.google.com/maps">Location</a></li>
             </ul>
          </nav>
       </div>

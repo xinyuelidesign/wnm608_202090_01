@@ -14,13 +14,13 @@ $Products = makeStatement("Products_admin_all",[]);
 
 
 $empty_product = (object)[
-   "title"=>"Banana",
-   "price"=>"10",
-   "category"=>"fruit",
-   "description"=>"Such a nice banana.",
-   "quantity"=>"37325",
-   "image_other"=>"fruit_banana.jpg,fruit_apple.jpg,fruit_kiwi_m.jpg",
-   "image_thumb"=>"fruit_banana_m.jpg"
+   "name"=>"name",
+   "price"=>"price",
+   "category"=>"category",
+   "description"=>"description",
+   "quantity"=>"number",
+   "image_other"=>"jpg_file",
+   "image_thumb"=>""
 ];
 
 
@@ -29,7 +29,7 @@ switch(@$_GET['crud']) {
    case 'update':
 
       makeStatement("product_update",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
@@ -46,7 +46,7 @@ switch(@$_GET['crud']) {
    case 'create':
 
       $id = makeStatement("product_insert",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
@@ -79,7 +79,7 @@ $id = $_GET['id'];
 $thumbs = explode(",",$product->image_other);
 
 $thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/img/$o'>";
+   return $r."<img src='/AAU/wnm608/li.xinyue/img/$o'>";
 });
 
 
@@ -91,10 +91,10 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 $productdata = $id=='new' ? '' : <<<HTML
 <div class="card soft">
    <div class="display-flex">
-      <h2 class="flex-stretch">$product->title</h2>
+      <h2 class="flex-stretch">$product->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="/AAU/wnm608/li.xinyue/img/trash.png" class="icon">
          </a>
       </div>
    </div>
@@ -116,7 +116,6 @@ $productdata = $id=='new' ? '' : <<<HTML
    </div>
    <div>
       <strong>Images</strong>
-      <div class="image-thumbs"><img src='/img/$product->image_thumb'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>
 </div>
@@ -137,8 +136,8 @@ echo <<<HTML
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
             <h2>$addoredit Product</h2>
             <div class="form-control">
-               <label for="product-title" class="form-label">Title</label>
-               <input id="product-title" name="product-title" type="text" placeholder="Type product title" class="form-input" value="$product->title">
+               <label for="product-name" class="form-label">name</label>
+               <input id="product-name" name="product-name" type="text" placeholder="Type product name" class="form-input" value="$product->name">
             </div>
             <div class="form-control">
                <label for="product-category" class="form-label">Category</label>
@@ -181,7 +180,7 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Product Administrator</title>
+   <name>UTs' Administrator</name>
 
    <?php include "../Parts/meta.php"; ?>
 </head>
@@ -190,7 +189,7 @@ HTML;
    <header class="navbar">
       <div class="container display-flex">
          <div class="flex-none">
-            <h1>Products Admin</h1>
+            <h1>UT</h1>
          </div>
          <div class="flex-stretch"></div>
          <!-- nav.nav.flex-none>ul>li>a[href=#]>{List} -->

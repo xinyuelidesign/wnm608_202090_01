@@ -16,8 +16,8 @@ include_once "lib/php/functions.php";
    <div class="container">
       <div class="card soft">
          <h2>About Us</h2>
-
-         <p>We make a thing.</p>
+<div class="view-window" style="background-image:url(img/cute.png)"></div>
+         <p>UT is designed as a place for the group who want "personalized" painting or sketches as the patterns on their shirts.</p>
       </div>
    </div>
 

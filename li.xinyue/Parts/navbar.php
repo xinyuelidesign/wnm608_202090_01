@@ -2,7 +2,7 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
       <div class="flex-none"><h1><a href="index.php">UT</a></h1></div>
-      <div class="flex-stretch"><h3>Nov&Dec Theme: Furry Animals</h3></div>
+      <div class="flex-stretch"><h3>Nov&Dec Theme: Reality and Fantasy</h3></div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
 <nav class="navbar navbar-default">
