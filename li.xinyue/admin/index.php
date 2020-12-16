@@ -19,8 +19,8 @@ $empty_product = (object)[
    "category"=>"category",
    "description"=>"description",
    "quantity"=>"number",
-   "image_other"=>"jpg_file",
-   "image_thumb"=>""
+   "image_other"=>"inclass.jpg",
+   "image_thumb"=>"inclassth.jpg"
 ];
 
 

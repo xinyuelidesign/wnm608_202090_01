@@ -2,7 +2,9 @@
 
 include_once "lib/php/functions.php";
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
    <title>Thanks</title>
@@ -20,6 +22,9 @@ include_once "lib/php/functions.php";
       </div>
       <div class="card hard">
       	<h3>Your order has been accepted.</h3>
+      </div>
+      <div>
+      <h4 style="text-align: center">Check your order status</h4>
       </div>
    </div>
 

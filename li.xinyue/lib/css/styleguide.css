@@ -198,6 +198,12 @@ code {
       text-align: center;
    }
 
+ .cardsoftflat {
+      margin-top: 50px;
+      border-radius:1em;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      text-align: right;
+   }
 
    .card.hard {
       border-radius:0.2em;

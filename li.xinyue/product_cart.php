@@ -36,7 +36,7 @@ $cart = getCartItems();
             </div>
          </div>
          <div class="col-xs-12 col-md-4">
-            <div class="card soft flat">
+            <div class="cardsoftflat">
                <div class="card-section">
                   <h2>Totals</h2>
                </div>
