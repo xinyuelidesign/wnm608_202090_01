@@ -41,6 +41,8 @@
   <a href="mailto: Xinyuelidesign@gmail.com">Contact</a>
   <div class="dropdown-content">
   <p>Xinyuelidesign@gmail.com</p>
+  <p>5005005000</p>
+
   </div>
   </div>
 

@@ -65,12 +65,12 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                   </div>
                   <div class="form-control">
                      
-                     <label for="product-color" class="form-label">Color</label>
+                     <label for="product-color" class="form-label">Background Color</label>
                      <div class="form-select">
                         <select name="product-color" id="product-color">
-                           <option value="red">Red</option>
-                           <option value="green">Green</option>
-                           <option value="blue">Blue</option>
+                           <option value="Transparent">Transparent</option>
+                           <option value="White">White</option>
+                           <option value="Defualt">Defualt</option>
                         </select>
                      </div>
                   </div>
@@ -84,13 +84,14 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
       <div class="card soft medium">
          <p><?= $product->description ?></p>
       </div>
-         <h2>Related Products</h2>
+         <h2>Recommendations</h2>
 
          <?php
 
-         recommendSimilar($product->name,$product->id);
+         recommendSimilar($product->category,$product->id);
 
          ?>
+      
    </div>
 
 </body>

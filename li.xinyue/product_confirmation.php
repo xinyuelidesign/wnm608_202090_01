@@ -18,6 +18,9 @@ include_once "lib/php/functions.php";
 
          <a href="product_list.php">Back to shopping</a>
       </div>
+      <div class="card hard">
+      	<h3>Your order has been accepted.</h3>
+      </div>
    </div>
 
 </body>

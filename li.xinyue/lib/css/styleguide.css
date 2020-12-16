@@ -1,6 +1,5 @@
 /* CSS RESET */
 
-
 *, *::before, *::after {
    box-sizing:border-box;
 }
@@ -36,7 +35,7 @@ h6 {
 }
 
 h3{ font-stretch: ultra-condensed;
-  color:#DFFAFC; }
+  color:#16A8DB; }
 
 a {
    text-decoration: none;
@@ -75,9 +74,14 @@ code {
 .hidden { display:none; }
 
 
+@media only screen and (min-width: 774px) {
 
 .display-flex { display:flex; }
+}
+@media only screen and (max-width: 774px) {
+
 .display-block { display:block; }
+}
 .display-inline-flex { display:inline-flex; }
 .display-inline-block { display:inline-block; }
 
@@ -92,7 +96,7 @@ code {
 
 
 
-
+@media only screen and (min-width: 774px) {
 
 /* Component Classes */
 .nav ul {
@@ -159,7 +163,7 @@ code {
 }
 
 
-
+}
 
 
 .view-window {
@@ -198,6 +202,8 @@ code {
    .card.hard {
       border-radius:0.2em;
       border:2px solid var(--color-neutral-medium);
+       text-align: center;
+
    }
 
    .card.dark {

@@ -41,6 +41,7 @@ $cart = getCartItems();
                   <h2>Totals</h2>
                </div>
                <?= cartTotals() ?>
+               
             </div>
          </div>
       </div>

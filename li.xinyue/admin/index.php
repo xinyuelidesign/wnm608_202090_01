@@ -89,7 +89,7 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 
 
 $productdata = $id=='new' ? '' : <<<HTML
-<div class="card soft">
+<div class="card hard">
    <div class="display-flex">
       <h2 class="flex-stretch">$product->name</h2>
       <div>
@@ -122,7 +122,7 @@ $productdata = $id=='new' ? '' : <<<HTML
 HTML;
 
 echo <<<HTML
-<div class="card soft">
+<div class="card hard">
 <nav class="nav crumbs">
    <ul>
       <li><a href="{$_SERVER['PHP_SELF']}">Back</a></li>
@@ -180,7 +180,7 @@ HTML;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-   <name>UTs' Administrator</name>
+   <h2>UTs' Administrator</h2>
 
    <?php include "../Parts/meta.php"; ?>
 </head>
@@ -222,7 +222,7 @@ HTML;
          } else {
 
          ?>
-         <div class="card medium soft">
+         <div class="card soft">
          <h2>Product List</h2>
 
          <div>
