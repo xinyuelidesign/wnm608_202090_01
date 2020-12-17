@@ -20,7 +20,7 @@ $cart = getCartItems();
 </head>
 <body>
    
-   <?php include "Parts/navbar.php" ?>
+   <?php include "Parts/Nav1.php" ?>
 
 
    <div class="container">

@@ -1,10 +1,4 @@
         <meta name="view-window" content="width=device-width, initial-scale=1">
-<header class="navbar">
-   <div class="container display-flex flex-align-center">
-      <div class="flex-none"><h1><a href="index.php">UT</a></h1></div>
-      <div class="flex-stretch"><h6>Nov&Dec Theme: Reality and Fantasy</h6>
-        <h8>Choose digital paints for your shirts</h8>
-      </div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
 <nav class="navbar navbar-default">

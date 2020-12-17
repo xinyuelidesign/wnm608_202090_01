@@ -32,7 +32,9 @@
    <header class="navbar">
       <div class="container display-flex flex-align-center">
          <div class="flex-none"><h1>Thanks</h1></div>
-         <div class="flex-stretch"></div>
+         <div class="flex-stretch">
+
+         </div>
          
          <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
          <nav class="nav flex-none">
@@ -50,7 +52,9 @@
             </ul>
          </nav>
       </div>
-     
+     <footer>  <div class="card soft">
+      <button class="form-button"> 
+    Subscribe</button></footer>
 </body>
 </head>
 </html>

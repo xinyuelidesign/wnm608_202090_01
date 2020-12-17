@@ -28,7 +28,8 @@ h1,
 h2,
 h4,
 h5,
-h6 {
+h6,
+{
    font-family:Futura, serif;
    font-stretch: ultra-condensed;
    color: #0C2B78;
@@ -174,7 +175,7 @@ code {
    background-attachment:fixed;
    background-repeat: no-repeat;
 
-   height:70vh;
+   height:40vh;
 }
 
 
@@ -192,14 +193,14 @@ code {
 }
 
    .card.soft {
-      margin-top: 50px;
+      margin-top: 60px;
       border-radius:1em;
       box-shadow: 0 0 25px rgba(0,0,0,0.3);
       text-align: center;
    }
 
  .cardsoftflat {
-      margin-top: 50px;
+      margin-top: 60px;
       border-radius:1em;
       box-shadow: 0 0 25px rgba(0,0,0,0.3);
       text-align: right;
@@ -228,7 +229,7 @@ code {
       padding:0;
    }
 
-
+  
 
 .well {
     padding: 0.5em;
@@ -322,6 +323,7 @@ code {
 .btn:hover,
 .form-button:hover {
    text-decoration:none;
+   color: #16A8DB;
 }
 
    .btn.inline {
@@ -446,7 +448,7 @@ ul.nav {
   border-right: 2px solid transparent;
 }
 ul.nav li {
-  padding: 200px 0;
+  padding: 50px 0;
   display: inline-block;
 }
 ul.nav li a {
